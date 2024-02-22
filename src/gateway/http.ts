@@ -92,5 +92,9 @@ export class Http {
       headers,
       method: 'DELETE',
     })
+
+    if (!response.ok) {
+      throw new Error(response.statusText)
+    }
   }
 }
