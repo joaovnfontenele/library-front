@@ -9,7 +9,7 @@
 
 <template>
   <div
-    class="w-full max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow sm:p-6 md:p-8 dark:border-gray-700 dark:bg-gray-800"
+    class="w-full max-w-sm my-auto rounded-lg border border-gray-200 bg-white p-4 shadow sm:p-6 md:p-8 dark:border-gray-700 dark:bg-gray-800"
   >
     <form
       class="space-y-6"
