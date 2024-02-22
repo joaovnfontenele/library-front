@@ -22,31 +22,31 @@
   }
 </script>
 <template>
-  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
     <table
-      class="dark:text-gray-400 w-full text-left text-sm text-gray-500 rtl:text-right"
+      class="w-full text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400"
     >
       <thead
-        class="dark:bg-gray-700 dark:text-gray-400 bg-gray-50 text-xs text-gray-700"
+        class="bg-gray-50 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-400"
       >
         <tr>
-          <th scope="col" class="px-6 py-3">Number</th>
-          <th scope="col" class="px-6 py-3">Title</th>
-          <th scope="col" class="px-6 py-3">Actions</th>
+          <th scope="col" class="px-6 py-3 text-start ">Number</th>
+          <th scope="col" class="px-6 py-3 text-start">Title</th>
+          <th scope="col" class="px-6 py-3 text-center">Actions</th>
         </tr>
       </thead>
       <tbody>
         <tr
           v-for="(chapter, index) in chapters"
           :key="index"
-          class="dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600 border-b bg-white hover:bg-gray-50"
+          class="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600"
         >
-          <td class="px-6 py-4 text-center">
+          <td class="px-6 py-4 text-start">
             {{ chapter.number }}
           </td>
           <th
             scope="row"
-            class="dark:text-white whitespace-nowrap px-6 py-4 font-medium text-gray-900"
+            class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
           >
             {{ chapter.title }}
           </th>
@@ -63,7 +63,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-trash-2 dark:text-blue-500 mx-auto cursor-pointer text-center text-red-600 hover:underline"
+              class="lucide lucide-trash-2 mx-auto cursor-pointer text-center text-red-600 hover:underline dark:text-blue-500"
             >
               <path d="M3 6h18" />
               <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
