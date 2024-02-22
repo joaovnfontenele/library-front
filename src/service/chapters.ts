@@ -17,5 +17,10 @@ export async function getChapters(bookId: string) {
 }
 
 export async function deleteChapter(chapterId: string) {
-  await Api.delete<any>(`/chapters/${chapterId}`)
+  try {
+     await Api.delete<any>(`/chapters/${chapterId}`)
+  } catch (error) {
+    notify.error('network error !!')
+    throw new Error()
+  }
 }
